@@ -5,13 +5,13 @@ signed main()
 {
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
-	int n;
-	cin>>n;
-	for(int i=1;i<=n;i++)
+	string s;
+	cin>>s;
+	int cnt=1;
+	for(int i=0;i<s.size();i++)
 	{
-		for(int j=1;j<=n-i;j++) cout<<" ";
-		for(int j=n-i+1;j<=n;j++) cout<<"#";
-		cout<<"\n";
+		if(s[i]>='A'&&s[i]<='Z') cnt++;
 	}
+	cout<<cnt;
 }
 
